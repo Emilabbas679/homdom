@@ -1,0 +1,236 @@
+.ui-front {
+    z-index: 1040;
+}
+.ui-menu {
+    list-style: none;
+    padding: .5rem 0;
+    margin: 0;
+    display: block;
+    outline: 0;
+    min-width: 11.25rem;
+    white-space: nowrap;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    z-index: 1000;
+    border-radius: .1875rem;
+    box-shadow: 0 0.25rem 0.5rem rgb(0 0 0 / 10%);
+}
+.ui-menu .ui-menu-item {
+    margin: 0;
+    position: relative;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: .5rem 1rem;
+    outline: 0;
+    color: #333;
+    overflow: hidden;
+    transition: all ease-in-out .15s;
+}
+.ui-menu a {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: .5rem 1rem;
+    outline: 0;
+    color: #333;
+    overflow: hidden;
+    transition: all ease-in-out .15s;
+}
+.ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.ui-autocomplete {
+    position: absolute;
+    display: none;
+    padding: .5rem 0;
+    z-index: 1000;
+    max-height: 250px;
+    overflow: auto;
+}
+.popovers {
+    display: inline-block;
+    vertical-align: top;
+    padding: 3px 0 3px 2px;
+    cursor: pointer;
+    position: relative;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+.popovers:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    background-image: url(../images/info.svg?v1);
+}
+.popovers span {
+    display: none;
+    position: absolute;
+    border: 1px solid #dbe2eb;
+    border-radius: 5px;
+    background-color: #fff;
+    z-index: 10001;
+    width: 270px;
+    box-shadow: 0px 5px 11px rgb(4 4 7 / 10%);
+    padding: 10px;
+    top: -10px;
+    left: 40px;
+}
+
+.js_box {
+    position: absolute;
+    background: url(/theme/frontend/apanel/style/thickbox/thickbox_bg.png);
+    z-index: 5002;
+    color: #000000;
+    display: none;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 2px 9px 2px rgb(0 0 0 / 18%);
+}
+.js_box_title {
+    background: #f04b23;
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px;
+    display: none;
+    cursor: move;
+}
+
+.js_box_content {
+    clear: both;
+    background: #fff;
+    padding: 15px 15px 15px 15px;
+    text-align: left;
+    position: relative;
+    /* border: 1px solid #ddd; */
+    border-top: 0;
+}
+.content {
+    padding: 1.25rem 1.25rem;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.js_box_close, #js_marketplace_click_image_viewer_close {
+    background: #DFDFDF;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    display: none;
+}
+.js_box_close a, .js_box_close a:hover, #js_marketplace_click_image_viewer_close a, #js_marketplace_click_image_viewer_close a:hover {
+    text-decoration: none;
+    margin: 5px;
+    display: block;
+    position: absolute;
+    right: 0px;
+    line-height: 25px;
+    color: #868686;
+    font-weight: bold;
+    padding: 0px 8px 0px 8px;
+    background: url(/theme/frontend/apanel/style/thickbox/js_box_close.png) repeat-x;
+    border: 1px #BFBFBF solid;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.js_box_history, .js_box_title_store {
+    display: none;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -.625rem;
+    margin-left: -.625rem;
+}
+.col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.col-md-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.monitor_li {
+    width: 300px;
+    height: 260px;
+    float: left;
+    background: #69450e;
+    margin: 6px;
+}
+.monitor_li img {
+    width: 100%;
+    height: 200px;
+}
+
+.monitor_address {
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+}
+div.error_message 
+{
+ 	background:#BF5F5F;
+ 	margin:4px 0 4px 0;
+ 	color:#fff;
+ 	padding:4px;
+ 	position:relative;
+ 	font-weight:bold; 	
+}
+.valid_message 
+{
+ 	background:#CEEEB2;
+ 	margin:4px 0 4px 0;
+ 	color:#000;
+ 	padding:6px; 	
+}
+
+div.public_message, div.message
+{
+ 	margin:4px 0px 4px 0px;
+ 	color:#6B6B6B;
+ 	padding:4px;
+ 	display:none; 	
+	background:#FEFBD9; 
+	border:1px #EEE9B5 solid; 	
+	position:relative;
+}
+div.message
+{
+	display:block;
+	margin:0px 0px 8px 0px;	
+}
+
+a.message_link
+{
+	position:absolute; right:0; margin-right:4px;
+	background:#fff;
+	display:block;
+	padding:1px 4px 1px 4px;
+	text-decoration:none;
+	color:#195B85;
+	font-size:12px;
+}
